@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task 2 REAL</string>
+    <string name="art_title_hint">Enter a title</string>
+    <string name="art_title_label">Title</string>
+    <string name="art_detail_label">Details</string>
+    <string name="art_solved_label">Solved</string>
+</resources>
