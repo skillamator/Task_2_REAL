@@ -56,6 +56,10 @@ class  ArtDetailFragment: Fragment(){
             }
         }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    }
 
     }
 
