@@ -10,7 +10,7 @@ import com.task3.task2real.databinding.FragmentArtDetailBinding
 import java.util.Date
 import java.util.UUID
 
-class ArtDetailFragment: Fragment(){
+class  ArtDetailFragment: Fragment(){
 
     private lateinit var binding: FragmentArtDetailBinding
 
