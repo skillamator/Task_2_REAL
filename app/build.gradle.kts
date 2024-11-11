@@ -1,7 +1,9 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-}
+    id("org.jetbrains.kotlin.kapt")
+    }
 
 android {
     namespace = "com.task3.task2real"
@@ -27,6 +29,7 @@ android {
         }
     }
 
+
     buildFeatures{
         viewBinding = true
     }
@@ -42,6 +45,22 @@ android {
 
 dependencies {
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+    implementation("androidx.room:room-runtime:2.5.0")
+    kapt("androidx.room:room-compiler:2.5.0")
+    implementation("androidx.room:room-ktx:2.5.0")
+//    implementation(libs.plugins.room.compiler)
+//    implementation(libs.room.runtime)
+//    implementation(libs.room.ktx)
+//    implementation(libs.androidx.lifecycle.runtime)
+//    implementation(libs.coroutines.core)
+//    implementation(libs.coroutines.android)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.fragment)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

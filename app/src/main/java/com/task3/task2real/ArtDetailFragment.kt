@@ -12,7 +12,11 @@ import java.util.UUID
 
 class  ArtDetailFragment: Fragment(){
 
-    private lateinit var binding: FragmentArtDetailBinding
+    private var _binding: FragmentArtDetailBinding? = null
+    private val binding
+        get() = checkNotNull(_binding) {
+            "Cannot access binding because it is null. Is the view visible?"
+        }
 
     private lateinit var art: Art
 
@@ -32,7 +36,7 @@ class  ArtDetailFragment: Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentArtDetailBinding.inflate(inflater, container, false)
+        _binding = FragmentArtDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -58,7 +62,7 @@ class  ArtDetailFragment: Fragment(){
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 
     }

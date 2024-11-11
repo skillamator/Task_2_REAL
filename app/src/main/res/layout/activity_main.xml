@@ -5,7 +5,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_container"
-    android:name="com.task3.task2real.ArtDetailFragment"
+    android:name="com.task3.task2real.ArtListFragment"
     tools:context=".MainActivity"/>
 
 

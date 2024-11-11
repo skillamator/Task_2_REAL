@@ -4,4 +4,6 @@
     <string name="art_title_label">Title</string>
     <string name="art_detail_label">Details</string>
     <string name="art_solved_label">Solved</string>
+    <string name="txt_art_title">Art Title</string>
+    <string name="txt_art_date">Art Date</string>
 </resources>

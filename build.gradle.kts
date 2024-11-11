@@ -2,4 +2,6 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.jetbrains.kotlin.android) apply false
+    id("org.jetbrains.kotlin.kapt") version "1.6.10" apply false
+    id("com.android.library") version "8.5.2" apply false
 }
