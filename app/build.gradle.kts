@@ -28,7 +28,11 @@ android {
             )
         }
     }
-
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
+    }
 
     buildFeatures{
         viewBinding = true
@@ -50,6 +54,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation("androidx.room:room-runtime:2.5.0")
     kapt("androidx.room:room-compiler:2.5.0")
+    implementation("androidx.room:room-runtime:2.5.0")
     implementation("androidx.room:room-ktx:2.5.0")
 //    implementation(libs.plugins.room.compiler)
 //    implementation(libs.room.runtime)

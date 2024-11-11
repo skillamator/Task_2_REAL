@@ -26,6 +26,8 @@ class ArtListViewModel: ViewModel() {
 
 
     suspend fun loadArts(): List<Art> {
+        val fetchedArts = artRepository.getArts()
+        Log.d(TAG, "Fetched arts: $fetchedArts") // Add this line
        return artRepository.getArts()
     }
 }

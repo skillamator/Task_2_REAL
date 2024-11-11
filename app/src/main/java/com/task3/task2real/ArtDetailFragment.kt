@@ -23,12 +23,12 @@ class  ArtDetailFragment: Fragment(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        art = Art(
-            id = UUID.randomUUID(),
-            title = "",
-            date = Date(),
-            isSolved = false
-        )
+//        art = Art(
+//            id = UUID.randomUUID(),
+//            title = "",
+//            date = Date(),
+//            isSolved = false
+//        )
     }
 
     override fun onCreateView(

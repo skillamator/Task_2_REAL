@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.util.Date
 import java.util.UUID
 
-@Entity
+@Entity(tableName = "Art")
 data class Art(
     @PrimaryKey val id: UUID,
     val title: String,
